@@ -1,14 +1,11 @@
 import React, { useState } from "react";
-import whatsapp from "../assets/images/whatsaap.png";
+
 import { Link } from "react-router-dom";
-import ScrollUpButton from "../components/ScrollUpButton";
 
 const NavigationBar = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   const [show, setShow] = useState(false);
-
-  
 
   return (
     <>
@@ -17,14 +14,6 @@ const NavigationBar = () => {
           <div className="text-white font-semibold font-roboto font-sans text-2xl ml-5">
             ANHE
           </div>
-
-          <div className="fixed right-15 bottom-7">
-            <Link to="https://wa.me/917909072226?I want to Know more About this?">
-              <img src={whatsapp} width="70" />
-            </Link>
-          </div>
-
-          <ScrollUpButton />
 
           <div className="lg:hidden">
             {/* Hamburger Icon */}
@@ -160,72 +149,75 @@ const NavigationBar = () => {
                     <Link
                       to="/Loan"
                       className="text-white hover:text-blue-500 relative"
-                      onClick={() => setIsDrawerOpen(false) }
+                      onClick={() => setIsDrawerOpen(false)}
                     >
                       Loan
                     </Link>
-                      
+
                     <div className="absolute bg-blue-950 w-34 flex flex-col text-white hover:text-white cursor-pointer">
-                      <p className="hover:bg-sky-500 hover:text-white border-b-2  p-1">
-                        <Link
-                          to="/PersonalLoan"
-                          className="text-white "
-                          onClick={() => setIsDrawerOpen(false)}
-                        >
-                          Personal Loan
-                        </Link>
+                      <p className="hover:bg-sky-500 hover:text-white border-b-2">
+                      <Link
+                      to="/PersonalLoan"
+                      className="text-white "
+                      onClick={() => setIsDrawerOpen(false)}
+                    >Personal Loan
+                    </Link>
                       </p>
 
-                      <p className="hover:bg-sky-500 hover:text-white border-b-2 p-1">
-                        <Link
-                          to="/BusinessLoan"
-                          className="text-white "
-                          onClick={() => setIsDrawerOpen(false)}
-                        >
-                          Business Loan
-                        </Link>
+                      <p className="hover:bg-sky-500 hover:text-white border-b-2">
+                      <Link
+                      to="/"
+                      className="text-white "
+                      onClick={() => setIsDrawerOpen(false)}
+                    >Business Loan
+                    </Link>
                       </p>
 
-                      <p className="hover:bg-sky-500 hover:text-white border-b-2 p-1">
-                        <Link
-                          to="/Mortgage"
-                          className="text-white "
-                          onClick={() => setIsDrawerOpen(false)}
-                        >
-                          Mortgage Loan
-                        </Link>
+                      <p className="hover:bg-sky-500 hover:text-white border-b-2">
+                      <Link
+                      to="/Mortgage"
+                      className="text-white "
+                      onClick={() => setIsDrawerOpen(false)}
+                    >Mortgage Loan
+                    </Link>
                       </p>
 
-                      <p className="hover:bg-sky-500 hover:text-white border-b-2 p-1">
-                        <Link
-                          to="/HomeLoan"
-                          className="text-white "
-                          onClick={() => setIsDrawerOpen(false)}
-                        >
-                          Home Loan
-                        </Link>
+                      <p className="hover:bg-sky-500 hover:text-white border-b-2">
+                      <Link
+                      to="/HomeLoan"
+                      className="text-white "
+                      onClick={() => setIsDrawerOpen(false)}
+                    >Home Loan
+                    </Link>
                       </p>
 
-                      <p className="hover:bg-sky-500 hover:text-white border-b-2 p-1">
-                        <Link
-                          to="/AutoLoanTopUp"
-                          className="text-white "
-                          onClick={() => setIsDrawerOpen(false)}
-                        >
-                          Auto Loan Top Up
-                        </Link>
+                      <p className="hover:bg-sky-500 hover:text-white border-b-2">
+                      <Link
+                      to="/AutoLoanTopUp"
+                      className="text-white "
+                      onClick={() => setIsDrawerOpen(false)}
+                    >Auto Loan Top Up
+                    </Link>
                       </p>
                     </div>
                   </div>
                 </li>
+
+                <li>
+                  <Link
+                    to="/AutoLoanTopUp"
+                    className="text-white hover:text-blue-500"
+                    onClick={() => setIsDrawerOpen(false)}
+                  >
+                    AutoLoanTopUp
+                  </Link>
+                </li>
               </ul>
 
               <div className="mt-4">
-                <Link to="/Contact">
-                  <button className="bg-sky-500 rounded-md p-3 font-semibold">
-                    Get a Quote
-                  </button>
-                </Link>
+                <button className="bg-sky-500 rounded-md p-3 font-semibold">
+                  Get a Quote
+                </button>
               </div>
             </div>
           )}
@@ -324,20 +316,20 @@ const NavigationBar = () => {
               </Link>
 
               {show && (
-                <div className="absolute bg-blue-950 w-[200px] flex flex-col text-white hover:text-white cursor-pointer  text-center">
-                  <p className="hover:bg-sky-500 hover:text-white md:border-b-2  p-2">
+                <div className="absolute bg-blue-950 w-32 flex flex-col text-white hover:text-white cursor-pointer">
+                  <p className="hover:bg-sky-500 hover:text-white md:border-b-2">
                     <Link
                       to="/PersonalLoan"
-                      className="text-white mt-4 "
+                      className="text-white "
                       onClick={() => setIsDrawerOpen(false)}
                     >
                       Personal Loan
                     </Link>
                   </p>
 
-                  <p className="hover:bg-sky-500 hover:text-white md:border-b-2 p-2">
+                  <p className="hover:bg-sky-500 hover:text-white md:border-b-2">
                     <Link
-                      to="/BusinessLoan"
+                      to="/"
                       className="text-white "
                       onClick={() => setIsDrawerOpen(false)}
                     >
@@ -345,7 +337,7 @@ const NavigationBar = () => {
                     </Link>
                   </p>
 
-                  <p className="hover:bg-sky-500 hover:text-white md:border-b-2 p-2">
+                  <p className="hover:bg-sky-500 hover:text-white md:border-b-2">
                     <Link
                       to="/Mortgage"
                       className="text-white "
@@ -355,7 +347,7 @@ const NavigationBar = () => {
                     </Link>
                   </p>
 
-                  <p className="hover:bg-sky-500 hover:text-white md:border-b-2 p-2">
+                  <p className="hover:bg-sky-500 hover:text-white md:border-b-2">
                     <Link
                       to="/HomeLoan"
                       className="text-white "
@@ -365,7 +357,7 @@ const NavigationBar = () => {
                     </Link>
                   </p>
 
-                  <p className="hover:bg-sky-500 hover:text-white p-2">
+                  <p className="hover:bg-sky-500 hover:text-white">
                     <Link
                       to="/AutoLoanTopUp"
                       className="text-white "
@@ -380,11 +372,9 @@ const NavigationBar = () => {
           </ul>
 
           <div className="hidden lg:flex justify-center text-white ">
-            <Link to="/Contact">
-              <button className="bg-sky-500 rounded-md p-3 font-semibold">
-                Get a Quote
-              </button>
-            </Link>
+            <button className="bg-sky-500 rounded-md p-3 font-semibold">
+              Get a Quote
+            </button>
           </div>
         </div>
       </nav>

@@ -16,7 +16,6 @@ import PersonalLoan from "./components/PersonalLoan";
 import AutoLoanTopUp from "./components/AutoLoanTopUp";
 import Mortgage from "./components/Mortgage";
 import HomeLoan from "./components/HomeLoan";
-import BusinessLoan from "./components/BusinessLoan";
 
 const App = () => {
   return (
@@ -33,7 +32,6 @@ const App = () => {
         <Route path="/Development" element=<Development /> />
         <Route path="/Loan" element=<Loan /> />
         <Route path="/PersonalLoan" element=<PersonalLoan /> />
-        <Route path="/BusinessLoan" element=<BusinessLoan /> />
         <Route path="/AutoLoanTopUp" element=<AutoLoanTopUp /> />
         <Route path="/Mortgage" element=<Mortgage /> />
         <Route path="/HomeLoan" element=<HomeLoan /> />

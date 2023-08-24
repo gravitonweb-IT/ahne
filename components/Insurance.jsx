@@ -1,7 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./Style.css";
-import About from "../assets/images/about-img-2.png";
+import About from "../assets/images/about-img-2.png"
 import InsuranceImg from "../assets/images/insurance-img.png";
 import Business from "../assets/images/business.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -34,11 +33,9 @@ const Insurance = () => {
           </h1>
 
           <p className="mt-5">
-            Committed to your success, we offer unwavering support. With
-            tailored solutions and a dedicated team, we're here to empower your
-            journey.
-            <br></br>
-            Dedicated to supporting your journey.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore <br></br> et dolore magna
+            aliqua. Quis ipsum suspendisse ultrices gravida. Risus
           </p>
         </div>
 
@@ -53,8 +50,8 @@ const Insurance = () => {
             </h3>
 
             <p className="mt-4 mb-5">
-              Providing heartfelt, exceptional service imbued with genuine care,
-              ensuring your satisfaction and building lasting connections.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore
             </p>
 
             <a className="bg-[#31abfc] text-[#fff] text-base p-1 px-2  rounded-full">
@@ -68,12 +65,12 @@ const Insurance = () => {
             </span>
 
             <h3 className="mt-4 text-[#262566] font-bold text-xl">
-              Service With Affection.
+              Service With Love
             </h3>
 
             <p className="mt-4 mb-5">
-              Delivering attentive and caring service, we go beyond expectations
-              to ensure your experience is cherished.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore
             </p>
 
             <a className="bg-[#31abfc] text-[#fff] text-base p-1 px-2  rounded-full">
@@ -87,12 +84,12 @@ const Insurance = () => {
             </span>
 
             <h3 className="mt-4 text-[#262566] font-bold text-xl">
-              Caringly Dedicated
+              Service With Love
             </h3>
 
             <p className="mt-4 mb-5">
-              Devoted service, infused with genuine care and affection, creating
-              a memorable and heartfelt experience.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore
             </p>
 
             <a className="bg-[#31abfc] text-[#fff] text-base p-1 px-2  rounded-full">
@@ -103,53 +100,44 @@ const Insurance = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mx-10 md:mx-20 lg:mx-32 mt-28">
-        <div>
-          <span className="text-[#31abfc] font-bold text-sm">About Us</span>
+      <div>
+        <span className="text-[#31abfc] font-bold text-sm">About Us</span>
 
-          <h1 className="text-[#262566] font-bold text-4xl mt-4">
-            Insurance Always Ready to Protect
-            <br />
-            your Life & Business
-          </h1>
+        <h1 className="text-[#262566] font-bold text-4xl mt-4">
+          Insurance Always Ready to Protect
+          <br />
+          your Life & Business
+        </h1>
 
-          <p className="mt-5">
-            Insurance stands as a steadfast guardian, unyielding in its
-            commitment to safeguard both lives and businesses. In the face of
-            uncertainties, it provides a shield against the unexpected, offering
-            financial protection and peace of mind. With a foundation built on
-            preparedness, insurance remains a constant ally, ready to shield
-            individuals and enterprises from the storms of life.
-          </p>
+        <p className="mt-5">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus
+        </p>
 
-          <p className="mt-4">
-            For individuals, it offers a safety net against medical expenses and
-            unforeseen accidents. For businesses, it fortifies against risks
-            that could disrupt operations. Whether personal or professional,
-            insurance stands as a testament to prudence, always prepared to step
-            in and mitigate the impact of unforeseen events.
-          </p>
+        <p className="mt-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus aliqua suspendris.
+        </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mt-4">
-            <div className="flex items-center">
-              <AiOutlineSafety className="text-4xl text-[#262566]" />
-              <span className="text-[#262566] text-base pl-3 font-bold">
-                We always Care about Client Satisfaction
-              </span>
-            </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mt-4">
+          <div className="flex items-center">
+            <AiOutlineSafety className="text-4xl text-[#262566]" />
+            <span className="text-[#262566] text-base pl-3 font-bold">
+              We always Care about Client Satisfaction
+            </span>
+          </div>
 
-            <div className="flex items-center">
-              <MdSafetyDivider className="text-4xl text-[#262566]" />
-              <span className="text-[#262566] text-base pl-3 font-bold">
-                100+ Community Involvement
-              </span>
-            </div>
+          <div className="flex items-center">
+            <MdSafetyDivider className="text-4xl text-[#262566]" />
+            <span className="text-[#262566] text-base pl-3 font-bold">
+              100+ Community Involvement
+            </span>
           </div>
         </div>
-
-        <div className="insurance-about-img px-16 mt-10">
-          <img src={About} className="w-full h-auto" alt="About Us" />
-        </div>
       </div>
+
+      <div className="insurance-about-img px-16 mt-10">
+        <img src={About} className="w-full h-auto" alt="About Us" />
+      </div>
+    </div>
 
       <div className="mt-20">
         <div className="text-center">
@@ -160,10 +148,9 @@ const Insurance = () => {
           </h1>
 
           <p className="mt-5">
-            Receive a complimentary quote today. Discover cost-effective
-            solutions tailored to your needs. Unlock possibilities with us.{" "}
-            <br></br>
-            Request your free quote now.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore <br></br> et dolore magna
+            aliqua. Quis ipsum suspendisse ultrices gravida. Risus
           </p>
         </div>
 
@@ -246,11 +233,10 @@ const Insurance = () => {
               Save up to 30% when you buy small <br></br>business insurance in
               online
             </h1>
-              <Link to='/Contact'>
+
             <button className="rounded-[5px] bg-[#31abfc] p-2 mt-5 mb-3 text-white">
               Contact Us
             </button>
-            </Link>
           </div>
         </div>
       </div>

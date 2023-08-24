@@ -60,7 +60,7 @@ const Homepage = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mx-10 mt-20">
         {/* Feature Card 1 */}
         <div className=" bg-white shadow-md hover:shadow-lg rounded-lg overflow-hidden  hover:bg-[#262566] hover:text-white">
-          <div className="w-20 mx-auto mt-6 text-sky-400">
+          <div className="w-20 mx-auto mt-6">
             <FontAwesomeIcon
               icon={faCircleUser}
               alt="Icon"
@@ -77,7 +77,7 @@ const Homepage = () => {
                   Key attributes defining the loan offer, encompassing rate,
                   term, amount, and conditions for borrowing.
                 </p>
-                <div className="mt-6 ">
+                <div className="mt-6">
                   <FontAwesomeIcon
                     icon={faCircleRight}
                     size="2x"
@@ -89,7 +89,7 @@ const Homepage = () => {
           </div>
         </div>
         <div className=" bg-white shadow-md hover:shadow-lg rounded-lg overflow-hidden  hover:bg-[#262566] hover:text-white">
-          <div className="w-20 mx-auto mt-6 text-sky-400">
+          <div className="w-20 mx-auto mt-6">
             <FontAwesomeIcon
               icon={faShieldHalved}
               alt="Icon"
@@ -119,7 +119,7 @@ const Homepage = () => {
           </div>
         </div>
         <div className=" bg-white shadow-md hover:shadow-lg rounded-lg overflow-hidden  hover:bg-[#262566] hover:text-white">
-          <div className="w-20 mx-auto mt-6 text-sky-400">
+          <div className="w-20 mx-auto mt-6">
             <FontAwesomeIcon
               icon={faLock}
               alt="Icon"
@@ -149,7 +149,7 @@ const Homepage = () => {
           </div>
         </div>
         <div className=" bg-white shadow-md hover:shadow-lg rounded-lg overflow-hidden  hover:bg-[#262566] hover:text-white">
-          <div className="w-20 mx-auto mt-6 text-sky-400">
+          <div className="w-20 mx-auto mt-6">
             <FontAwesomeIcon
               icon={faHandshake}
               alt="Icon"
@@ -195,20 +195,15 @@ const Homepage = () => {
           </h1>
 
           <p className="mt-5">
-            Insurance stands as a steadfast guardian, unyielding in its
-            commitment to safeguard both lives and businesses. In the face of
-            uncertainties, it provides a shield against the unexpected, offering
-            financial protection and peace of mind. With a foundation built on
-            preparedness, insurance remains a constant ally, ready to shield
-            individuals and enterprises from the storms of life.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+            ipsum suspendisse ultrices gravida. Risus
           </p>
 
           <p className="mt-4">
-            For individuals, it offers a safety net against medical expenses and
-            unforeseen accidents. For businesses, it fortifies against risks
-            that could disrupt operations. Whether personal or professional,
-            insurance stands as a testament to prudence, always prepared to step
-            in and mitigate the impact of unforeseen events.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+            ipsum suspendisse ultrices gravida. Risus aliqua suspendris.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mt-4">
@@ -243,11 +238,9 @@ const Homepage = () => {
         </div>
 
         <div className="w-full md:w-auto m-3 p-3">
-        <Link to='/Contact'>
           <button className="p-3 bg-white text-xl rounded-md w-full md:w-full lg:w-[200px]">
             Contact Us
           </button>
-          </Link>
         </div>
       </div>
 
@@ -265,9 +258,9 @@ const Homepage = () => {
         </h2>
 
         <p className="text-sm md:text-base font-sans">
-          Explore diverse loans: mortgages, personal, auto, business. Tailored
-          options catering to unique needs, enabling financial aspirations to
-          materialize.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
+          suspendisse ultrices gravida.
         </p>
       </div>
 
@@ -340,8 +333,8 @@ const Homepage = () => {
               <h3 className="text-xl font-semibold mb-2">Home Loan</h3>
 
               <p className="text-gray-600">
-                Secure your dream home with flexible home loan options and
-                competitive interest rates.
+                Leader ipsum dolor sit amet consuring lised faisism dolor sit
+                amet.
               </p>
 
               <Link
@@ -360,8 +353,8 @@ const Homepage = () => {
               <h3 className="text-xl font-semibold mb-2">Insurance</h3>
 
               <p className="text-gray-600">
-                Protection, peace, and security—insurance shields you from
-                life's uncertainties and unexpected events.
+                Leader ipsum dolor sit amet consuring lised faisism dolor sit
+                amet.
               </p>
 
               <Link
@@ -380,8 +373,8 @@ const Homepage = () => {
               <h3 className="text-xl font-semibold mb-2">Auto Loan Top Up</h3>
 
               <p className="text-gray-600">
-                Elevate your ride with easy auto loan top-up, unlocking enhanced
-                vehicle experiences.
+                Leader ipsum dolor sit amet consuring lised faisism dolor sit
+                amet.
               </p>
 
               <Link
@@ -416,11 +409,10 @@ const Homepage = () => {
               Save up to 30% when you buy small <br></br>business insurance in
               online
             </h1>
-              <Link to='/Contact'>
+
             <button className="rounded-[5px] bg-[#31abfc] p-2 mt-5 mb-3 text-white">
               Contact Us
             </button>
-            </Link>
           </div>
         </div>
       </div>
@@ -437,9 +429,9 @@ const Homepage = () => {
           </h1>
 
           <p className="mt-5">
-            Our proficient team blends experience and innovation to provide
-            tailored solutions, guiding you through challenges and towards
-            success with expertise
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.<br></br>{" "}
+            Quis ipsum suspendisse ultrices gravida. Risus
           </p>
         </div>
 
@@ -527,10 +519,9 @@ const Homepage = () => {
           </h1>
 
           <p className="mt-5">
-            Explore our blog for the freshest insights, covering diverse topics
-            that impact your life, business, and the ever-evolving world around
-            us.<br></br>
-            Discover our latest blog updates.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.<br></br>{" "}
+            Quis ipsum suspendisse ultrices gravida. Risus
           </p>
         </div>
 

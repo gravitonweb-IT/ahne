@@ -8,6 +8,7 @@ import img1 from "../assets/images/about-img1.png";
 import img2 from "../assets/images/vision-img.png";
 import img3 from "../assets/images/about-img-2.png";
 
+
 const About = () => {
   return (
     <>
@@ -30,19 +31,19 @@ const About = () => {
           <span className="text-[#31abfc] font-bold text-sm">About Us</span>
 
           <h1 className="text-[#262566] font-bold text-4xl mt-4">
-            We have been Thriving for Years in the Area
+            We have been Thriving for 37 Years in the Area
           </h1>
 
           <p className="mt-5">
-            We've flourished in this community. Our enduring presence reflects
-            unwavering dedication, trust, and excellence, establishing us as a
-            cornerstone of reliability and growth.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+            ipsum suspendisse ultrices gravida. Risus
           </p>
 
           <p className="mt-4">
-            We've evolved and grown alongside this area. Through challenges and
-            triumphs, our journey is a testament to our deep-rooted commitment
-            and thriving spirit.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+            ipsum suspendisse ultrices gravida. Risus aliqua suspendris.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mt-4">
@@ -115,6 +116,7 @@ const About = () => {
         </div>
       </div>
 
+    
       {/* //2nd About div */}
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mx-10 md:mx-20 lg:mx-32 mt-28">
@@ -131,16 +133,15 @@ const About = () => {
           </h1>
 
           <p className="mt-5">
-            Dedicated to our clients' success, we stand unwavering in our
-            commitment to guide and support. With tailored strategies and
-            unwavering support, we propel you towards your envisioned
-            achievements.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+            ipsum suspendisse ultrices gravida. Risus
           </p>
 
           <p className="mt-4">
-            Every step of the journey, we're by your side, transforming goals
-            into reality. Through personalized solutions and relentless
-            dedication, we ensure your aspirations find their rightful fruition.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+            ipsum suspendisse ultrices gravida. Risus aliqua suspendris.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mt-4">
@@ -191,6 +192,7 @@ const About = () => {
         </div>
       </div>
 
+      
       {/* 3rd div start */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mx-10 md:mx-20 lg:mx-32 mt-28">
         <div>
@@ -203,20 +205,15 @@ const About = () => {
           </h1>
 
           <p className="mt-5">
-            Insurance stands as a steadfast guardian, unyielding in its
-            commitment to safeguard both lives and businesses. In the face of
-            uncertainties, it provides a shield against the unexpected, offering
-            financial protection and peace of mind. With a foundation built on
-            preparedness, insurance remains a constant ally, ready to shield
-            individuals and enterprises from the storms of life.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+            ipsum suspendisse ultrices gravida. Risus
           </p>
 
           <p className="mt-4">
-            For individuals, it offers a safety net against medical expenses and
-            unforeseen accidents. For businesses, it fortifies against risks
-            that could disrupt operations. Whether personal or professional,
-            insurance stands as a testament to prudence, always prepared to step
-            in and mitigate the impact of unforeseen events.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+            ipsum suspendisse ultrices gravida. Risus aliqua suspendris.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mt-4">
