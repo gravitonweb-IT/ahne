@@ -10,6 +10,23 @@ import Shipping4 from "../assets/images/drop-shipping4.png";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import {
+  AiFillAndroid,
+  AiOutlineLaptop,
+  AiOutlineNodeIndex,
+} from "react-icons/ai";
+import { FaLaptopCode } from "react-icons/fa";
+
+import {
+  GiArtificialIntelligence,
+  GiScoutShip,
+  GiProfit,
+} from "react-icons/gi";
+import { BsFillDatabaseFill } from "react-icons/bs";
+import { SiTransportforlondon, SiHandshake } from "react-icons/si";
+import { MdEmojiTransportation } from "react-icons/md";
+import { BiPhoneCall } from "react-icons/bi";
+
 export default function DropShipping() {
   return (
     <>
@@ -161,6 +178,98 @@ export default function DropShipping() {
           </p>
         </div>
       </div>
+
+      {/* new content */}
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10  mx-10 md:mx-20 lg:mx-32 mt-28">
+        <div className="hover:bg-[#262566] hover:text-white shadow-lg p-12 rounded-lg overflow-hidden bg-white">
+          <div className="flex justify-center text-sky-400">
+            <GiScoutShip className="h-[50px] w-[50px]  " />
+          </div>
+
+          <div className="text-center mt-5">
+            <h2 className="text-2xl font-semibold mb-2 ">Sell Your Product</h2>
+            <p className=" text-xl mt-2 ">
+              Browse our extensive product catalog and select the items you want
+              to sell in your online store.
+            </p>
+          </div>
+        </div>
+
+        <div className="hover:bg-[#262566] hover:text-white shadow-lg p-12 rounded-lg overflow-hidden bg-white">
+          <div className="flex justify-center text-sky-400">
+            <GiProfit className="h-[50px] w-[50px]" />
+          </div>
+
+          <div className="text-center mt-5">
+            <h2 className="text-2xl font-semibold mb-2 ">Fixed Margin</h2>
+            <p className=" text-xl mt-2">
+              Sit back and watch your business thrive. With our efficient
+              dropshipping model, your side income potential is limitless.
+            </p>
+          </div>
+        </div>
+        <div className="hover:bg-[#262566] hover:text-white shadow-lg p-12 rounded-lg overflow-hidden bg-white">
+          <div className="flex justify-center text-sky-400">
+            <SiTransportforlondon className="h-[50px] w-[50px] " />
+          </div>
+
+          <div className="text-center mt-5">
+            <h2 className="text-2xl font-semibold mb-2 ">
+              Portfolio Management
+            </h2>
+            <p className=" text-xl mt-2">
+              Handling all your accounts and order management without any
+              hurdles
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10  mx-10 md:mx-20 lg:mx-32 mt-28">
+        <div className="hover:bg-[#262566] hover:text-white shadow-lg p-12 rounded-lg overflow-hidden bg-white">
+          <div className="flex justify-center text-sky-400">
+            <SiHandshake className="h-[50px] w-[50px] " />
+          </div>
+
+          <div className="text-center mt-5">
+            <h2 className="text-2xl font-semibold mb-2 ">Order Management</h2>
+            <p className=" text-xl mt-2">
+              From Buying the best quality material to the delivery of the
+              products is possible at reasonable price
+            </p>
+          </div>
+        </div>
+
+        <div className="hover:bg-[#262566] hover:text-white shadow-lg p-12 rounded-lg overflow-hidden bg-white">
+          <div className="flex justify-center text-sky-400">
+            <MdEmojiTransportation className="h-[50px] w-[50px] " />
+          </div>
+
+          <div className="text-center mt-5">
+            <h2 className="text-2xl font-semibold mb-2 ">Delivery</h2>
+            <p className=" text-xl mt-2">
+              We pick, pack, and ship the products directly to your customers,
+              with your branding front and center.
+            </p>
+          </div>
+        </div>
+
+        <div className=" hover:bg-[#262566] hover:text-white shadow-lg p-12 rounded-lg overflow-hidden bg-white ">
+          <div className="flex justify-center text-sky-400  ">
+            <BiPhoneCall className="h-[50px] w-[50px] " />
+          </div>
+
+          <div className="text-center mt-5 ">
+            <h2 className="text-2xl font-semibold mb-2 ">Contact</h2>
+            <p className=" text-xl mt-2">
+              Start your business with a Call on this Number +91-7874990627 or visit our Contact  section for more details
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* new content */}
     </>
   );
 }

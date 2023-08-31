@@ -124,7 +124,7 @@ const Contact = () => {
               <div>
                 <h1>location</h1>
 
-                <span className="text-xl font-normal">Benguluru</span>
+                <span className="text-xl font-normal">Surat</span>
               </div>
             </h4>
 
@@ -147,13 +147,13 @@ const Contact = () => {
 
                 <p>
                   {" "}
-                  <span className="text-xl">9876567870</span>{" "}
+                  <span className="text-xl">+91-7874990627</span>{" "}
                 </p>
 
-                <p>
+                {/* <p>
                   {" "}
                   <span className="text-xl">(967) 870 765</span>{" "}
-                </p>
+                </p> */}
               </div>
             </h4>
 
@@ -182,12 +182,9 @@ const Contact = () => {
 
                 <p>
                   {" "}
-                  <span className="text-xl">email@gmail.com</span>{" "}
-                </p>
-
-                <p>
-                  {" "}
-                  <span className="text-xl">lok@email.com</span>{" "}
+                  <span className="text-xl">
+                    ahneconsultancyservices@gmail.com
+                  </span>{" "}
                 </p>
               </div>
             </h4>
@@ -196,7 +193,7 @@ const Contact = () => {
       </div>
 
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497700.11233460344!2d77.30126459904938!3d12.953790196306082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1691479687163!5m2!1sen!2sin"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119066.41709350083!2d72.7398943256151!3d21.159340300058496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e59411d1563%3A0xfe4558290938b042!2sSurat%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1693384385748!5m2!1sen!2sin"
         width="100%"
         height="450"
         allowfullscreen=""
@@ -204,6 +201,8 @@ const Contact = () => {
         referrerpolicy="no-referrer-when-downgrade"
         className="m-auto p-2 rounded-md"
       ></iframe>
+
+      {/* newlink */}
     </>
   );
 };

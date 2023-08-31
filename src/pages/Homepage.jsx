@@ -88,6 +88,8 @@ const Homepage = () => {
             </div>
           </div>
         </div>
+
+        
         <div className=" bg-white shadow-md hover:shadow-lg rounded-lg overflow-hidden  hover:bg-[#262566] hover:text-white">
           <div className="w-20 mx-auto mt-6 text-sky-400">
             <FontAwesomeIcon
@@ -428,7 +430,7 @@ const Homepage = () => {
 
       {/* part 6 start our team */}
 
-      <div className="mt-28">
+      {/* <div className="mt-28">
         <div className="text-center">
           <span className="text-[#12b48b] font-bold text-base"> Team</span>
 
@@ -486,7 +488,7 @@ const Homepage = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* part 6  our team end */}
 

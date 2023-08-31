@@ -6,8 +6,26 @@ import InsuranceImg from "../assets/images/insurance-img.png";
 import Business from "../assets/images/business.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { AiOutlineSafety } from "react-icons/ai";
-import { MdSafetyDivider } from "react-icons/md";
+
 import { faCheck, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import {
+  AiOutlineBank,
+  AiFillInsurance,
+  AiOutlineLaptop,
+  AiOutlineNodeIndex,
+} from "react-icons/ai";
+import { FaLaptopCode } from "react-icons/fa";
+
+import { GiArtificialIntelligence } from "react-icons/gi";
+import { BsFillDatabaseFill } from "react-icons/bs";
+import {
+  MdSafetyDivider,
+  MdOutlineFamilyRestroom,
+  MdOutlineSavings,
+  MdOutlineHealthAndSafety,
+} from "react-icons/md";
+import { TfiMoney } from "react-icons/tfi";
+import { GiSuspensionBridge, GiReceiveMoney } from "react-icons/gi";
 
 const Insurance = () => {
   return (
@@ -23,6 +41,119 @@ const Insurance = () => {
           <h6 className="ml-2">Insurance</h6>
         </div>
       </div>
+
+      {/* top heading */}
+      <div>
+        <h1 className="text-[#262566] font-bold text-4xl mt-20 text-center">
+          Plans
+        </h1>
+      </div>
+      {/* top heading */}
+
+      {/*new content */}
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10  mx-10 md:mx-20 lg:mx-32 mt-28">
+        <div className="hover:bg-[#262566] hover:text-white shadow-lg p-12 rounded-lg overflow-hidden bg-white">
+          <div className="flex justify-center text-sky-400">
+            <MdOutlineFamilyRestroom className="h-[50px] w-[50px] " />
+          </div>
+
+          <div className="text-center mt-5">
+            <h2 className="text-2xl font-semibold mb-2 ">Term Plans</h2>
+          </div>
+        </div>
+
+        <div className="hover:bg-[#262566] hover:text-white shadow-lg p-12 rounded-lg overflow-hidden bg-white">
+          <div className="flex justify-center text-sky-400">
+            <TfiMoney className="h-[50px] w-[50px]" />
+          </div>
+
+          <div className="text-center mt-5">
+            <h2 className="text-2xl font-semibold mb-2 ">
+              Immediate Income Plans
+            </h2>
+          </div>
+        </div>
+
+        <div className="hover:bg-[#262566] hover:text-white shadow-lg p-12 rounded-lg overflow-hidden bg-white">
+          <div className="flex justify-center text-sky-400">
+            <GiSuspensionBridge className="h-[50px] w-[50px] " />
+          </div>
+
+          <div className="text-center mt-5">
+            <h2 className="text-2xl font-semibold mb-2 ">Pension Plans</h2>
+          </div>
+        </div>
+
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10  mx-10 md:mx-20 lg:mx-32 mt-28"> */}
+        <div className="hover:bg-[#262566] hover:text-white shadow-lg p-12 rounded-lg overflow-hidden bg-white">
+          <div className="flex justify-center text-sky-400">
+            <MdOutlineSavings className="h-[50px] w-[50px] " />
+          </div>
+
+          <div className="text-center mt-5">
+            <h2 className="text-2xl font-semibold mb-2 ">Savings Plans</h2>
+          </div>
+        </div>
+
+        <div className="hover:bg-[#262566] hover:text-white shadow-lg p-12 rounded-lg overflow-hidden bg-white">
+          <div className="flex justify-center text-sky-400">
+            <MdOutlineHealthAndSafety className="h-[50px] w-[50px] " />
+          </div>
+
+          <div className="text-center mt-5">
+            <h2 className="text-2xl font-semibold mb-2 ">Smart Protect Plan</h2>
+          </div>
+        </div>
+        <div className=" hover:bg-[#262566] hover:text-white shadow-lg p-12 rounded-lg overflow-hidden bg-white ">
+          <div className="flex justify-center text-sky-400  ">
+            <AiFillInsurance className="h-[50px] w-[50px] " />
+          </div>
+
+          <div className="text-center mt-5 ">
+            <h2 className="text-2xl font-semibold mb-2 ">Ulip Plans</h2>
+          </div>
+        </div>
+        {/* </div> */}
+
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10  mx-10 md:mx-20 lg:mx-32 mt-28"> */}
+        <div className="hover:bg-[#262566] hover:text-white shadow-lg p-12 rounded-lg overflow-hidden bg-white">
+          <div className="flex justify-center text-sky-400">
+            <GiReceiveMoney className="h-[50px] w-[50px] " />
+          </div>
+
+          <div className="text-center mt-5">
+            <h2 className="text-2xl font-semibold mb-2 ">Guaranteed Income</h2>
+          </div>
+        </div>
+
+        <div className="hover:bg-[#262566] hover:text-white shadow-lg p-12 rounded-lg overflow-hidden bg-white">
+          <div className="flex justify-center text-sky-400">
+            <AiOutlineBank className="h-[50px] w-[50px]" />
+          </div>
+
+          <div className="text-center mt-5">
+            <h2 className="text-2xl font-semibold mb-2 ">
+              Fixed Maturity Plans
+            </h2>
+          </div>
+        </div>
+        <div className="hover:bg-[#262566] hover:text-white shadow-lg p-12 rounded-lg overflow-hidden bg-white">
+          <div className="flex justify-center text-sky-400">
+            <MdOutlineSavings className="h-[50px] w-[50px] " />
+          </div>
+
+          <div className="text-center mt-5">
+            <h2 className="text-2xl font-semibold mb-2 ">
+              Return of Premium Term Plans
+            </h2>
+          </div>
+        </div>
+      </div>
+      {/* </div> */}
+
+      {/*  new content */}
+
       <div className="mt-20">
         <div className="text-center">
           <span className="text-[#31abfc] font-bold text-sm">
@@ -246,10 +377,10 @@ const Insurance = () => {
               Save up to 30% when you buy small <br></br>business insurance in
               online
             </h1>
-              <Link to='/Contact'>
-            <button className="rounded-[5px] bg-[#31abfc] p-2 mt-5 mb-3 text-white">
-              Contact Us
-            </button>
+            <Link to="/Contact">
+              <button className="rounded-[5px] bg-[#31abfc] p-2 mt-5 mb-3 text-white">
+                Contact Us
+              </button>
             </Link>
           </div>
         </div>

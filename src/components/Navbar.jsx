@@ -2,24 +2,29 @@ import React, { useState } from "react";
 import whatsapp from "../assets/images/whatsaap.png";
 import { Link } from "react-router-dom";
 import ScrollUpButton from "../components/ScrollUpButton";
+import Logo from "../assets/images/Logo_ANHE.jpg";
 
 const NavigationBar = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   const [show, setShow] = useState(false);
 
-  
-
   return (
     <>
       <nav className="bg-blue-950 p-3 sticky top-0 z-50">
         <div className="container mx-auto flex justify-between items-center">
           <div className="text-white font-semibold font-roboto font-sans text-2xl ml-5">
-            ANHE
+            <Link to="/">
+              <img
+                src={Logo}
+                className="h-[60px] w-[60px] rounded-[50%]"
+                alt=""
+              />
+            </Link>
           </div>
 
           <div className="fixed right-15 bottom-7">
-            <Link to="https://wa.me/917909072226?I want to Know more About this?">
+            <Link to="https://wa.me/917874990627?I want to Know more About this?">
               <img src={whatsapp} width="70" />
             </Link>
           </div>
@@ -105,7 +110,7 @@ const NavigationBar = () => {
                   </Link>
                 </li>
 
-                <li>
+                {/* <li>
                   <Link
                     to="/Policy"
                     className="text-white hover:text-blue-500"
@@ -113,9 +118,9 @@ const NavigationBar = () => {
                   >
                     Privacy Policy
                   </Link>
-                </li>
+                </li> */}
 
-                <li>
+                {/* <li>
                   <Link
                     to="/contact"
                     className="text-white hover:text-blue-500"
@@ -123,7 +128,7 @@ const NavigationBar = () => {
                   >
                     Contact
                   </Link>
-                </li>
+                </li> */}
 
                 <li>
                   <Link
@@ -155,16 +160,27 @@ const NavigationBar = () => {
                   </Link>
                 </li>
 
+
+                <li>
+                  <Link
+                    to="/contact"
+                    className="text-white hover:text-blue-500"
+                    onClick={() => setIsDrawerOpen(false)}
+                  >
+                    Contact
+                  </Link>
+                </li>
+
                 <li>
                   <div>
                     <Link
                       to="/Loan"
                       className="text-white hover:text-blue-500 relative"
-                      onClick={() => setIsDrawerOpen(false) }
+                      onClick={() => setIsDrawerOpen(false)}
                     >
                       Loan
                     </Link>
-                      
+
                     <div className="absolute bg-blue-950 w-34 flex flex-col text-white hover:text-white cursor-pointer">
                       <p className="hover:bg-sky-500 hover:text-white border-b-2  p-1">
                         <Link
@@ -261,7 +277,7 @@ const NavigationBar = () => {
               </Link>
             </li>
 
-            <li>
+            {/* <li>
               <Link
                 to="/Policy"
                 className="text-white hover:text-blue-500"
@@ -269,9 +285,9 @@ const NavigationBar = () => {
               >
                 Privacy Policy
               </Link>
-            </li>
+            </li> */}
 
-            <li>
+            {/* <li>
               <Link
                 to="/contact"
                 className="text-white hover:text-blue-500"
@@ -279,7 +295,7 @@ const NavigationBar = () => {
               >
                 Contact
               </Link>
-            </li>
+            </li> */}
 
             <li>
               <Link
@@ -310,6 +326,17 @@ const NavigationBar = () => {
                 Development
               </Link>
             </li>
+
+            <li>
+              <Link
+                to="/contact"
+                className="text-white hover:text-blue-500"
+                activeClassName="font-bold"
+              >
+                Contact
+              </Link>
+            </li>
+
 
             <li
               onMouseOver={() => setShow(true)}
