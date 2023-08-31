@@ -1,33 +1,75 @@
 import React from "react";
+
 import { Link } from "react-router-dom";
+
 import "./Style.css";
+
 import About from "../assets/images/about-img-2.png";
+
 import InsuranceImg from "../assets/images/insurance-img.png";
+
 import Business from "../assets/images/business.png";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import { AiOutlineSafety } from "react-icons/ai";
 
 import { faCheck, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+
 import {
   AiOutlineBank,
   AiFillInsurance,
   AiOutlineLaptop,
   AiOutlineNodeIndex,
 } from "react-icons/ai";
+
 import { FaLaptopCode } from "react-icons/fa";
 
 import { GiArtificialIntelligence } from "react-icons/gi";
+
 import { BsFillDatabaseFill } from "react-icons/bs";
+
 import {
   MdSafetyDivider,
   MdOutlineFamilyRestroom,
   MdOutlineSavings,
   MdOutlineHealthAndSafety,
 } from "react-icons/md";
+
 import { TfiMoney } from "react-icons/tfi";
+
 import { GiSuspensionBridge, GiReceiveMoney } from "react-icons/gi";
 
+import { useRef } from "react";
+
+import emailjs from "@emailjs/browser";
+
 const Insurance = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_qy0u69v",
+        "template_sv6m4gg",
+        form.current,
+        "GaqTCwNAqzegP7dCa"
+      )
+
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+
+    e.target.reset();
+  };
+
   return (
     <>
       <div className="bg-[#050b2a] text-white flex flex-col justify-center items-center h-80">
@@ -43,11 +85,13 @@ const Insurance = () => {
       </div>
 
       {/* top heading */}
+
       <div>
         <h1 className="text-[#262566] font-bold text-4xl mt-20 text-center">
           Plans
         </h1>
       </div>
+
       {/* top heading */}
 
       {/*new content */}
@@ -86,6 +130,7 @@ const Insurance = () => {
         </div>
 
         {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10  mx-10 md:mx-20 lg:mx-32 mt-28"> */}
+
         <div className="hover:bg-[#262566] hover:text-white shadow-lg p-12 rounded-lg overflow-hidden bg-white">
           <div className="flex justify-center text-sky-400">
             <MdOutlineSavings className="h-[50px] w-[50px] " />
@@ -105,6 +150,7 @@ const Insurance = () => {
             <h2 className="text-2xl font-semibold mb-2 ">Smart Protect Plan</h2>
           </div>
         </div>
+
         <div className=" hover:bg-[#262566] hover:text-white shadow-lg p-12 rounded-lg overflow-hidden bg-white ">
           <div className="flex justify-center text-sky-400  ">
             <AiFillInsurance className="h-[50px] w-[50px] " />
@@ -114,9 +160,11 @@ const Insurance = () => {
             <h2 className="text-2xl font-semibold mb-2 ">Ulip Plans</h2>
           </div>
         </div>
+
         {/* </div> */}
 
         {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10  mx-10 md:mx-20 lg:mx-32 mt-28"> */}
+
         <div className="hover:bg-[#262566] hover:text-white shadow-lg p-12 rounded-lg overflow-hidden bg-white">
           <div className="flex justify-center text-sky-400">
             <GiReceiveMoney className="h-[50px] w-[50px] " />
@@ -138,6 +186,7 @@ const Insurance = () => {
             </h2>
           </div>
         </div>
+
         <div className="hover:bg-[#262566] hover:text-white shadow-lg p-12 rounded-lg overflow-hidden bg-white">
           <div className="flex justify-center text-sky-400">
             <MdOutlineSavings className="h-[50px] w-[50px] " />
@@ -150,6 +199,7 @@ const Insurance = () => {
           </div>
         </div>
       </div>
+
       {/* </div> */}
 
       {/*  new content */}
@@ -263,6 +313,7 @@ const Insurance = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mt-4">
             <div className="flex items-center">
               <AiOutlineSafety className="text-4xl text-[#262566]" />
+
               <span className="text-[#262566] text-base pl-3 font-bold">
                 We always Care about Client Satisfaction
               </span>
@@ -270,6 +321,7 @@ const Insurance = () => {
 
             <div className="flex items-center">
               <MdSafetyDivider className="text-4xl text-[#262566]" />
+
               <span className="text-[#262566] text-base pl-3 font-bold">
                 100+ Community Involvement
               </span>
@@ -307,54 +359,59 @@ const Insurance = () => {
             <h1 className="text-[#fff] font-bold text-3xl">Connect Us</h1>
 
             <div className="form">
-              <div class="form-group mt-10">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="Name"
-                  placeholder="Your Name"
-                ></input>
-              </div>
-
-              <div class="form-group mt-10">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="Email"
-                  placeholder="Your Email"
-                ></input>
-              </div>
-
-              <div class="form-group mt-10">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="Number"
-                  placeholder="Your Number"
-                ></input>
-              </div>
-
-              <div class="form-group mt-10">
-                <div class="select-box">
-                  <select class="form-select">
-                    <option value="5">Insurance</option>
-
-                    <option value="1">Home Property</option>
-
-                    <option value="2">Health Insurance</option>
-
-                    <option value="0">Car Insurance</option>
-
-                    <option value="3">Life Insurance</option>
-
-                    <option value="4">Home Insurance</option>
-                  </select>
+              <form ref={form} onSubmit={sendEmail}>
+                <div class="form-group mt-10">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="Name"
+                    placeholder="Your Name"
+                    name="name"
+                  ></input>
                 </div>
-              </div>
 
-              <button className="insurance-button mt-10">
-                Start Saving Today
-              </button>
+                <div class="form-group mt-10">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="Email"
+                    placeholder="Your Email"
+                    name="email"
+                  ></input>
+                </div>
+
+                <div class="form-group mt-10">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="Number"
+                    placeholder="Your Number"
+                    name="phone"
+                  ></input>
+                </div>
+
+                <div class="form-group mt-10">
+                  <div class="select-box">
+                    <select class="form-select" name="message">
+                      <option value="5">Insurance</option>
+
+                      <option value="1">Home Property</option>
+
+                      <option value="2">Health Insurance</option>
+
+                      <option value="0">Car Insurance</option>
+
+                      <option value="3">Life Insurance</option>
+
+                      <option value="4">Home Insurance</option>
+                    </select>
+                  </div>
+                </div>
+
+                <button type="submit" className="insurance-button mt-10">
+                  Start Saving Today
+                </button>
+              </form>
             </div>
           </div>
         </div>
@@ -377,6 +434,7 @@ const Insurance = () => {
               Save up to 30% when you buy small <br></br>business insurance in
               online
             </h1>
+
             <Link to="/Contact">
               <button className="rounded-[5px] bg-[#31abfc] p-2 mt-5 mb-3 text-white">
                 Contact Us

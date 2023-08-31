@@ -1,24 +1,34 @@
-import React, { useState } from "react";
+import React, { useRef } from "react";
+
 import "./Style.css";
 
+import emailjs from "@emailjs/browser";
+
 const Contact = () => {
-  const [values, setValue] = useState({
-    name: "",
+  const form = useRef();
 
-    email: "",
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-    phone: "",
+    emailjs
+      .sendForm(
+        "service_qy0u69v",
+        "template_sv6m4gg",
+        form.current,
+        "GaqTCwNAqzegP7dCa"
+      )
 
-    message: "",
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
 
-    subject: "",
-  });
-
-  function inputHandle(event) {
-    const newObj = { ...values, [event.target.name]: event.target.value };
-
-    setValue(newObj);
-  }
+    e.target.reset();
+  };
 
   return (
     <>
@@ -43,60 +53,50 @@ const Contact = () => {
               Drop Us A Message For Any Query
             </h4>
 
-            <form>
+            <form ref={form} onSubmit={sendEmail}>
               <div className="grid grid-cols-2 gap-5 pb-4 pt-4">
                 <input
                   type="text"
-                  className="mt-1 px-4 py-3 bg-gray-100 border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block  rounded-md sm:text-sm focus:ring-1 col-span-2 md:col-span-1 "
+                  className="mt-1 px-4 py-3 form-control bg-gray-100 border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block  rounded-md sm:text-sm focus:ring-1 col-span-2 md:col-span-1 "
                   placeholder="Username"
-                  onChange={inputHandle}
                   name="name"
-                  value={values.name}
                 />
 
                 <input
                   type="text"
-                  className="mt-1 px-4 py-3 bg-gray-100 border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block  rounded-md sm:text-sm focus:ring-1 col-span-2 md:col-span-1"
+                  className="mt-1 px-4 py-3 form-control bg-gray-100 border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block  rounded-md sm:text-sm focus:ring-1 col-span-2 md:col-span-1"
                   placeholder="Email"
-                  onChange={inputHandle}
                   name="email"
-                  value={values.email}
                 />
 
                 <input
                   type="text"
-                  className="mt-1 px-4 py-3 bg-gray-100 border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block  rounded-md sm:text-sm focus:ring-1 col-span-2 md:col-span-1"
+                  className="mt-1 px-4 py-3 form-control bg-gray-100 border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block  rounded-md sm:text-sm focus:ring-1 col-span-2 md:col-span-1"
                   placeholder="Phone Number"
-                  onChange={inputHandle}
                   name="phone"
-                  value={values.phone}
                 />
 
                 <input
                   type="text"
-                  className="mt-1 px-4 py-3 bg-gray-100 border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block  rounded-md sm:text-sm focus:ring-1 col-span-2 md:col-span-1"
+                  className="mt-1 px-4 py-3 form-control bg-gray-100 border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block  rounded-md sm:text-sm focus:ring-1 col-span-2 md:col-span-1"
                   placeholder="Subject"
-                  onChange={inputHandle}
                   name="subject"
-                  value={values.subject}
                 />
 
                 <textarea
                   placeholder="Text area"
                   cols="5"
                   rows="8"
-                  className="mt-1 px-4 py-3 bg-gray-100 border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block  rounded-md sm:text-sm focus:ring-1  col-span-2  "
-                  onChange={inputHandle}
+                  className="mt-1 px-4 py-3 form-control bg-gray-100 border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block  rounded-md sm:text-sm focus:ring-1  col-span-2  "
                   name="message"
-                  value={values.message}
                 />
 
                 <input
                   type="submit"
                   value="Send message"
-                  // onClick={submitHandle}
-
                   className=" flex m-auto focus-outline-none bg-sky-400  py-2 px-8 hover:bg-indigo-600 text-lg
+
+ 
 
                 text-white font-bold col-span-2 rounded-lg border-2 shadow-sm border-slate-300"
                 />
@@ -151,8 +151,11 @@ const Contact = () => {
                 </p>
 
                 {/* <p>
+
                   {" "}
+
                   <span className="text-xl">(967) 870 765</span>{" "}
+
                 </p> */}
               </div>
             </h4>
@@ -183,9 +186,15 @@ const Contact = () => {
                 <p>
                   {" "}
                   <span className="text-xl">
-                    ahneconsultancyservices@gmail.com
+                  businessloanahne@gmail.com
                   </span>{" "}
                 </p>
+                {/* <p>
+                  {" "}
+                  <span className="text-xl">
+                    ahneconsultancyservices@gmail.com
+                  </span>{" "}
+                </p> */}
               </div>
             </h4>
           </div>
